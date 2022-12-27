@@ -1,0 +1,8 @@
+## qurey string 
+for example sample.com/textform?name=fahime & family=abouhamze
+Whatever comes after question mark is "Query Stream" which is contain key and value
+## Binding Source or Data Attribute 
+##[from Body]  to fetch date from body of request 
+##[from form] request header 
+##[from query]
+##[from route] [route]
