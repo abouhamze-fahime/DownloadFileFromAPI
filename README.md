@@ -19,8 +19,21 @@
 
 . In this solution we define the type of file 
 
-
-        [HttpGet("DownloadFile2")]
+   // at first we should add "FileExtensionContentTypeProvider" to the core in  namespace :   using Microsoft.AspNetCore.StaticFiles;
+   
+      builder.Services.AddSingleton<FileExtensionContentTypeProvider>();//برای تشخیص نوع فایل پی دی اف است یا داکیومنت برای تایپهای فایلها استفاده می شود 
+      
+    //inject via constructor 
+      FileExtensionContentTypeProvider fileExtensionContentTypeProvider;
+        public FileController(FileExtensionContentTypeProvider fileExtensionContentTypeProvider)
+        {
+            this.fileExtensionContentTypeProvider = fileExtensionContentTypeProvider;
+        }
+      
+      
+      
+      
+      [HttpGet("DownloadFile2")]
         public ActionResult DownloadFile2(string fileId)
         {
             string pathToFile = "download/Install-Northwind-Script.zip";
