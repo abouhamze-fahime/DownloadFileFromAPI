@@ -6,3 +6,5 @@ Whatever comes after question mark is "Query Stream" which is contain key and va
 ##[from form] request header 
 ##[from query]
 ##[from route] [route]
+from header 
+from body from route from query
