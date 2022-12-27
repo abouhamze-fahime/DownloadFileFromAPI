@@ -1,10 +1,31 @@
 ## qurey string 
 for example sample.com/textform?name=fahime & family=abouhamze
 Whatever comes after question mark is "Query Stream" which is contain key and value
+
+## [from route]  parameter that is send in route  [route]
+[Rout("{id}/{type}/{goods}"]
+sample.com/1/Product/Book
+public ActionResult Test(int id , string type , string good)
+{
+}
+
+
+
 ## Binding Source or Data Attribute 
 ##[from Body]  to fetch date from body of request 
 ##[from form] request header 
 ##[from query]
-##[from route] [route]
+
+
+
+
+
 from header 
 from body from route from query
+
+# compelex type => from body
+send a class to an api
+
+# collection => send several list => from form
+file  => from form
+
